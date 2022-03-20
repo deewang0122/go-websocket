@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"go-websocket/server/connection"
 	"net/http"
 	"time"
@@ -66,7 +65,7 @@ ERR:
 }
 
 func main() {
-	fmt.Println("testing websocket ... ")
+	//fmt.Println("testing websocket ... ")
 
 	http.HandleFunc("/test_websocket", wsHandler)
 
