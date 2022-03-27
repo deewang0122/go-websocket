@@ -43,7 +43,7 @@ func wsHandler(w http.ResponseWriter, r *http.Request) {
 			if err = conn.WriteMessge([]byte("heartbeat")); err != nil {
 				return
 			}
-			time.Sleep(5 * time.Second)
+			time.Sleep(60 * time.Second)
 		}
 
 	}()
